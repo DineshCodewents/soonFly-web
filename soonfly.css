@@ -1,15 +1,17 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Manrope', sans-serif;
 }
-
 nav {
-  margin: 25px 25px 50px;
+  top: 0;
+  padding: 15px;
   display: flex;
   background-color: #101010;
   border-radius: 15px;
   color: white;
-  height: 55px;
+  height: 20px;
+  width: 70%;
   justify-content: space-between;
   align-items: center;
   font-size: 18px;
@@ -18,24 +20,30 @@ nav {
   position: sticky;
 }
 .sticky {
+  right: 1%;
+  left: 30px;
+  height: 25px;
   position: fixed;
-
+  top: 20px;
+  width: 93%;
+  background-color: #101010; 
+  z-index: 1000;
 }
+
 .starimage {
   margin-top: 2px;
   margin-left: 25px;
   display: inline-flex;
   gap: 10px;
+  
 }
-
+.starimage h3{
+  font-family: 'Syncopate';
+  font-size: 18px;
+}
 .starimage img {
   height: 20px;
 }
-
-.navbar-nav {
-  justify-content: flex-start;
-}
-
 nav ul {
   display: flex;
   list-style-type: none;
@@ -83,3 +91,483 @@ nav ul li a {
   background-color: #595959
 }
 
+.main-container {
+  display: flex;
+  margin: 130px 25px 0px 150px;
+}
+
+.heading-column {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+.application-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 60px;
+  border: 2px solid #101010;
+  border-radius: 15px;
+  font-family: 'Manrope', sans-serif;
+  width: 15px;
+  font-size: 10px;
+}
+
+.heading h1 {
+  padding: 20px 0 30px 0;
+  font-size: 60px;
+  font-weight: 700;
+  font-family: 'Manrope', sans-serif;
+}
+
+.heading p {
+  font-family: 'Manrope', sans-serif;
+  padding-bottom: 40px;
+
+}
+.btn-getstart {
+  display: inline-flex;
+  color: white;
+  background-color: #101010;
+  padding: 0;
+  border-radius: 25px;
+  margin: 0 0 40px 10px;
+}
+.btn-getstart-icon:hover{
+  display: inline-flex;
+  padding: 15px 40px;
+}
+.btn-getstart-text,
+.btn-getstart-icon {
+  display: inline-flex;
+  padding: 15px 30px;
+}
+.small-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 50px;
+  margin-bottom: 25px;
+}
+.timer{
+  padding-bottom: 30px;
+}
+.book-mark{
+  padding-bottom: 30px;
+}
+.active-users h1{
+  padding-bottom: 20px;
+}
+.active-users p{
+  font-size: 14px;
+}
+.timer::after,
+.book-mark::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 2px;
+  background-color: #101010;
+  margin-top: -20px;
+  margin-left: 40px;
+}
+
+.design-column{
+  flex: 1;
+}
+.ticket-information{
+  margin: 0;
+  padding-left: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.plus-sign {
+  flex: none;
+  position: absolute;
+  top: 245px;
+  left: 760px;
+  width: 55px;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+}
+.horizontal-line{
+  background-color: #101010;
+  width: 55px;
+  height: 2px;
+}
+.vertical-line{
+  background-color: #101010;
+  width: 55px;
+  height: 2px;
+  transform: rotate(90deg);
+}
+.ticket-details {
+  margin-top: 8em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 225px;
+  padding: 0;
+  border-radius: 15px;
+  background-image: url(./images/flight.jpg);
+  background-size: cover;
+  overflow: hidden;
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  position: relative;
+}
+
+.detail {
+  display: flex;
+  text-align: flex-start;
+  padding: 0;
+  position: absolute;
+  justify-content: space-between;
+  top: 10px;
+  left: 10px;
+}
+.detail p{
+  margin: 0;
+}
+.detail i {
+  padding-left: 120px;
+  cursor: pointer;
+}
+
+.ticket-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.ticket-heading h1 {
+  margin: 0;
+}
+
+.ticket-heading i {
+  margin-left: 100px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+.ticket-date {
+  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 225px;
+  padding: 0;
+  border-radius: 15px;
+  background-color: #101010;
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  position: relative;
+  z-index: -1;
+}
+.date-bg{
+  background: linear-gradient(180deg, #e2b6cd 0%, #101010 100%);
+  filter: blur(10px);
+ border-radius: 50%;
+ flex: none;
+ height: 115px;
+ width: 115px;
+ margin-left: 70px;
+margin-top: 50px;
+}
+.date-cal{
+  display: flex;
+  position: absolute;
+  align-items: flex-end;
+  padding: 0;
+  top: 10px;
+  left: 10px;
+}
+.date-cal p{
+  margin: 0;
+  padding-right: 20px;
+  font-size: 32px;
+}
+.date-cal i{
+  padding-left: 110px;
+  cursor: pointer;
+}
+.date-cal::after{
+  content: "";
+  display: block;
+  width: 100%;
+  top: 150%;
+  position: absolute;
+  border: 1px dashed white;
+  z-index: 1;
+}
+.date-check::after{
+  content: "";
+  display: block;
+  width: 100%;
+  top: 150%;
+  position: absolute;
+  border: 1px dashed gray;
+  filter: blur(0.9px);
+}
+.date-check{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0px;
+  position: absolute;
+  bottom: 65px;
+  left: 0;
+ z-index: 1;
+}
+.date-check p{
+  margin: 0 0 0 8px;
+}
+.date-check i{
+  margin-left: 120px;
+  padding-bottom: 5px;
+}
+.date-event::after{
+  content: "";
+  display: block;
+  width: 100%;
+  top: 130%;
+  position: absolute;
+  border: 1px dashed gray;
+  filter: blur(0.9px);
+
+}
+.date-event{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 0px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
+.date-event p{
+  margin: 0 0 5px 8px;
+}
+.date-event i{
+  margin-left: 190px;
+  padding-bottom: 5px;
+}
+.ticke-profiles{
+  margin-left: 10px;
+}
+.ticket-person{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 225px;
+  padding: 0;
+  border-radius: 15px;
+  background-color: #101010;
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  position: relative;
+}
+.person-detail{
+  display: flex;
+  position: absolute;
+  padding: 0;
+  top: 10px;
+  left: 10px;
+}
+.person-detail p{
+  font-size: 14px;
+  margin: 0;
+}
+.person-detail i {
+  padding-left: 85px;
+  cursor: pointer;
+}
+.person-name{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.profile-img{
+  padding: 40px 0 0 60px;
+}
+.profile-img img{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 5px solid #101010;
+}
+.schedule{
+  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 125px;
+  padding: 0;
+  border-radius: 15px;
+  background-color: #101010;
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  position: relative;
+}
+.waw-text{
+  display: flex;
+  position: absolute;
+  padding: 0;
+  top: 10px;
+  left: 10px;
+}
+.waw-text p{
+  margin: 0;
+  font-size: 18px;
+}
+.text-time{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: 'Manrope', sans-serif;
+}
+.text-time p{
+  padding-left: 120px;
+}
+.circle{
+  height: 24px;
+  width: 24px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: auto;
+}
+.schedule::before {
+  content: '';
+  position: absolute;
+  top: auto;
+  bottom: 0; 
+  left: 50%;
+  width: 1px;
+  height: calc(100% - 75px);
+  border-left: 2px dashed white;
+}
+.place::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: calc(100% - 75px);
+  border-left: 2px dashed white;
+}
+.place{
+  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 125px;
+  padding: 0;
+  border-radius: 15px;
+  background-color: #b1b2aa;
+  font-family: 'Manrope', sans-serif;
+  position: relative;
+}
+.jkf-text{
+  display: flex;
+  position: absolute;
+  padding: 0;
+  top: 10px;
+  left: 10px;
+}
+.jkf-text p{
+  margin: 0;
+  font-size: 18px;
+}
+.txt-time{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: 'Manrope', sans-serif;
+}
+.txt-time h3{
+  font-size: 14px;
+  font-weight: 800;
+}
+.txt-time p{
+  padding-left: 120px;
+}
+.flight{
+  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 150px;
+  padding: 0;
+  border-radius: 15px;
+  background-color: #fcfdf8;
+  font-family: 'Manrope', sans-serif;
+  position: relative;
+}
+.ticket-text{
+  display: flex;
+  position: absolute;
+  padding: 0;
+  top: 10px;
+  left: 10px;
+}
+.ticket-text::after{
+  content: "";
+  display: block;
+  width: 14em;
+  top: 150%;
+  position: absolute;
+  border: 1px dashed #101010;
+}
+.ticket-text p{
+  margin: 0;
+  font-size: 18px;
+
+}
+.plane-time{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  font-family: 'Manrope', sans-serif;
+ 
+}
+.plane-time p{
+  padding-left: 120px;
+}
+.plane-time i{
+  padding:0;
+  cursor: pointer;
+}
+.barcode img{
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 15px;
+  width: 90%;
+  height: 40px;
+}
+
+@media screen and (max-width: 1050px) {
+  .support-button, .getStart-button{
+    display: none;
+  }
+}
