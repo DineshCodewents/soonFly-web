@@ -10,9 +10,3 @@ function myFunction() {
   }
 }
 
-const menu = document.querySelector('.hamburger-menu')
-const menuList = document.querySelector('.navbar-nav')
-menu.addEventListener('click', ()=>{
-  menuList.classList.toggle('show')
-})
-
